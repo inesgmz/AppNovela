@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título" />
+
+    <EditText
+        android:id="@+id/editTextAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Autor" />
+
+    <EditText
+        android:id="@+id/editTextAño"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Año" />
+
+    <EditText
+        android:id="@+id/editTextSinopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sinopsis" />
+
+    <Button
+        android:id="@+id/btnAgregarNovela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Novela" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

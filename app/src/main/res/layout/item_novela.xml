@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/novelaTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título:"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:background="@drawable/titulo_background"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/novelaAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autor:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/novelaAño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Año:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/novelaSinopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sinopsis:"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btnFavorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="☆"
+        android:background="@android:color/transparent"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/reseñasText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reseñas:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextReseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Añadir reseña"/>
+
+
+    <Button
+        android:id="@+id/btnAgregarReseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Reseña" />
+
+</LinearLayout>
