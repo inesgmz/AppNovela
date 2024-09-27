@@ -57,4 +57,8 @@
      - Este método devuelve el tamaño de la lista de novelas, es decir, cuántos elementos se mostrarán en el RecyclerView.
    - eliminarNovela
      - Este método elimina una novela de la lista en la posición especificada y notifica al RecyclerView que el ítem ha sido eliminado, para que se actualice la vista.
+## Interfaz onNovelaClickListener
+- Esta interfaz permite capturar los clics en una novela dentro de una lista o en cualquier otro lugar donde se presenten novelas, facilitando la comunicación entre componentes.
+
+  
 
