@@ -1,9 +1,9 @@
-Proyecto AppNovela
+# Proyecto AppNovela
 - Appnovela es una aplicación de Android desarrollada en Kotlin que permite a los usuarios agregar, eliminar y marcar novelas como favoritas.
 - Utiliza un RecyclerView para mostrar una lista de novelas y un adaptador personalizado para gestionar las interacciones del usuario
-# Clase MainActivity.kt
+## Clase MainActivity.kt
 - La clase MainActivity extiende ComponentActivity, que es la actividad principal de la aplicación.
-## Funcionalidades 
+### Funcionalidades 
 - onCreate: Aquí se configuran los componentes principales, como el RecyclerView para la lista de novelas, y los EditText y Button para agregar nuevas novelas.
     - RecyclerView: Componente que permite mostrar listas de elementos de forma eficiente.
           - Se usa LinearLayoutManager para organizar los elementos en una lista vertical.
