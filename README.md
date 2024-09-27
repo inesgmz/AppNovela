@@ -60,5 +60,6 @@
 ## Interfaz onNovelaClickListener
 - Esta interfaz permite capturar los clics en una novela dentro de una lista o en cualquier otro lugar donde se presenten novelas, facilitando la comunicación entre componentes.
 
+URL: https://github.com/inesgmz/AppNovela.git
   
 
