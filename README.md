@@ -14,16 +14,18 @@
     - Notifica al adaptador que se ha insertado un nuevo elemento y muestra un mensaje de confirmación al usuario.
 - eliminarNovela : Función que elimina una novela de la lista cuando el usuario lo solicita. Utiliza el adaptador para eliminar la novela en la posición correspondiente y notifica al usuario con un Toast.
 - mostrarNotificacionFavorito : Esta función muestra una notificación (Toast) indicando si una novela ha sido marcada o desmarcada como favorita.
-# Clase Novela
+## Clase Novela
 - La clase Novela es una data class de Kotlin que representa el modelo de una novela dentro de la aplicación AppNovela.
 - Esta clase contiene las propiedades básicas que describen una novela, como su título, autor, año de publicación, sinopsis, reseñas y una marca para indicar si es una novela favorita.
-## Propiedades
+### Propiedades
 - titulo: String
 - autor: String
 - año: Int
 - sinopsis: String
 - reseñas: MutableList<String>
 - esFavorita: Boolean
-## Funcionalidades
+### Funcionalidades
 - AgregarReseñas
 - Marcar como favorita
+## Clase NovelaAdaptador
+
