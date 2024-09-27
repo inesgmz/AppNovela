@@ -28,4 +28,33 @@
 - AgregarReseñas
 - Marcar como favorita
 ## Clase NovelaAdaptador
+- La clase NovelaAdaptador es un adaptador personalizado para un RecyclerView que muestra una lista de novelas en la aplicación AppNovela.
+- Esta clase gestiona la visualización de los elementos de la lista, así como las interacciones del usuario, como agregar reseñas, marcar novelas como favoritas y eliminar elementos.
+### Parámetros del constructor
+- listaNovelas: MutableList<Novela>: Lista mutable de objetos Novela que contiene los datos que se mostrarán en el RecyclerView.
+- onDeleteClick: (Int) -> Unit: Función de callback que se ejecuta cuando se quiere eliminar una novela. Recibe la posición de la novela en la lista.
+- onFavoritoClick: (Int) -> Unit: Función de callback que se ejecuta cuando se marca o desmarca una novela como favorita. También recibe la posición de la novela en la lista.
+### Vista de los elementos
+    - Clase interna: NovelaViewHolder
+            - La clase NovelaViewHolder extiende de RecyclerView.ViewHolder y es responsable de mantener las vistas individuales dentro del RecyclerView.
+            - Componentes de la Vista:
+                - titulo: TextView: Muestra el título de la novela.
+                - autor: TextView: Muestra el autor de la novela.
+                - año: TextView: Muestra el año de publicación de la novela.
+                - sinopsis: TextView: Muestra una breve sinopsis de la novela.
+                - reseñasText: TextView: Muestra las reseñas acumuladas de la novela.
+                - editTextReseña: EditText: Campo de entrada para agregar una nueva reseña.
+                - btnAgregarReseña: Button: Botón para agregar la reseña introducida en el EditText.
+                - btnFavorito: Button: Botón para marcar o desmarcar la novela como favorita.
+    - Metodos Principales: 
+            - onCreateViewHolder:
+                - Este método se encarga de inflar el diseño de cada ítem en la lista desde un archivo XML llamado item_novela. 
+                - Retorna un objeto de tipo NovelaViewHolder, que contiene las vistas individuales para cada novela.
+            - onBindViewHolder:
+                - Este método enlaza los datos de una novela específica a las vistas correspondientes en el ViewHolder. 
+                - Aquí se configuran las acciones que el usuario puede realizar, como agregar reseñas, marcar como favorita o eliminar la novela.
+            - getItemCount
+                - Este método devuelve el tamaño de la lista de novelas, es decir, cuántos elementos se mostrarán en el RecyclerView.
+            - eliminarNovela
+                - Este método elimina una novela de la lista en la posición especificada y notifica al RecyclerView que el ítem ha sido eliminado, para que se actualice la vista.
 
